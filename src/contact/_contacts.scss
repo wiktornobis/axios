@@ -1,0 +1,173 @@
+
+
+.contact {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    height: 1025px;
+
+ 
+    &_left {
+        height: 100%;
+        width: 100%;
+        &_image {
+            height: 100%;
+            width: 100%;
+            opacity: 0.2;
+        }
+    }
+     &_right {
+        height: 800px;
+        width: 500px;
+        position: absolute;
+        right: 6%;
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    
+       
+        &_title {
+            font-size: 38px;
+            margin-bottom: 35px;
+
+   
+        }
+
+        &_form {
+            width: 100%;
+            margin-top: 80px;
+
+       
+            
+            &_first {
+                display: flex;
+                gap: 20px;
+
+                &-name {
+                    width: 100%;
+                }
+
+                &-name input {
+                    padding: 5px 0;
+                    border: none;
+                    border-bottom: 2px solid black;
+                    font-size: 18px;
+                    outline: none;
+                    width: 100%;
+
+                
+                }
+
+                &-text {
+                    margin-top: 50px;
+                    
+                   
+
+                    &-area {
+                        padding: 10px 0;
+                        height: 105px;
+                        border: none;
+                        border-bottom: 2px solid black;
+                        font-size: 18px;
+                        outline: none;
+                        resize: none;   
+
+                        
+                    }
+                }
+
+                &-btn {
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                 
+
+                    &-submit {
+                        font-size: 18px;
+                        font-weight: 300;
+                        border: 1px solid black;
+                        padding: 13px 52px;
+                        background-color: white;
+                        cursor: pointer;
+                        
+                         
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    bottom: 20px;
+    width: 230px;
+    left: 45%;
+    position: absolute;
+
+
+
+    &_title {
+        font-size: 16px;
+       
+    
+    }
+
+    &_icon {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        bottom: 15px;
+        right: 6%;
+        
+        &_img {
+            height: 25px;
+            cursor: pointer;
+            
+          
+        }
+    }
+}
+
+label {
+    font-size: 16px;
+   
+
+  }
+
+.error {
+position: relative;
+top: 5px;
+color: red;
+font-size: 14px;
+
+
+
+    &::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: red;
+        display: block;
+        position: absolute;
+        top: -7px;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+::placeholder {
+    opacity: 0.3;
+    
+}
+input, textarea {
+    background: transparent;
+    color: black;
+}
